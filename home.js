@@ -1,8 +1,16 @@
 function getWeather() {
+	
+	var apiKEY = "fe68c339c0765aca16a04b7eede836dd"; // Replace with your API key of Dark API
+	var latitude = 40.1262812; // Replace with your latitude
+	var longitude = -3.848989500000016; // Replace with your longitude
+	var cityName = "Illescas"; // Replace with your city name
+	var url = "https://api.darksky.net/forecast/a4f5bf18fc5658fe8ede41e91c12ff88/"+latitude+","+longitude;
+
+	
+	
+	
 	var ajax = new XMLHttpRequest();
 	var json;
-	var apiKEY = "fe68c339c0765aca16a04b7eede836dd";
-	var url = "https://api.darksky.net/forecast/a4f5bf18fc5658fe8ede41e91c12ff88/40.1262812,-3.848989500000016"
 
 	var temperatureF;
 	var temperatureC;
@@ -91,6 +99,7 @@ function getWeather() {
 				}
 
 				$("#appName").remove();
+				$("#city").html(cityName);
 				$("#temp").html(temperatureC + "º" + " / " + title);
 				$("#list").append("Humedad:  " + humidity + " %" + "<br>");
 				$("#list").append("Velocidad del viento:  " + windSpeed + " Km/h" + "<br>");

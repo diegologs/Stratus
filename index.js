@@ -20,7 +20,7 @@ function createMainWindow() {
 		width: 900,
 		height: 550,
 		title: "Stratus",
-		icon: __dirname + '/icons/64x64.png'
+		icon: __dirname + '/icons/512x512.png'
 	});
 
 	win.loadURL(`file://${__dirname}/index.html`);
