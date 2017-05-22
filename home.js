@@ -75,7 +75,11 @@ function getWeather() {
 					console.log(daily[i]);
 					var tempDaily = (daily[i].temperatureMax - 32) * 5 / 9;
 					tempDaily = tempDaily.toFixed(1);
-					$("#daily").append('<h3><div class="col-sm-6 daily"><i id="iconDaily'+i+'" class="wi wi-night-sleet icon"></i> '+currentDay+" <span class='daily-temp'>"+tempDaily+"º </span>"+"</h3>");
+
+					var tempMinDaily = (daily[i].temperatureMin - 32) * 5 / 9;
+					tempMinDaily = tempMinDaily.toFixed(1);
+
+					$("#daily").append('<h3><div class="col-sm-6 daily"><i id="iconDaily'+i+'" class="wi wi-night-sleet icon"></i> '+currentDay+" <span class='daily-temp blue'>"+tempMinDaily+"º </span>"+" <span class='daily-temp red'>"+tempDaily+"º </span>"+"</h3>");
 					$("iconDaily").removeClass("wi-night-sleet");
 					var iconDaily = getIcon(daily[i].icon, iconDaily);
 					console.log(iconDaily);
@@ -93,7 +97,7 @@ function getWeather() {
 				$("#list").append("Probabilidad de lluvia: " + json.currently.precipProbability*100 + " %")
 				$("#icon").removeClass("wi-night-sleet");
 				$("#icon").addClass(icon);
-				$("#main").css("background", "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("+image+")");  
+				$("#main").css("background", "linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.68) ), url("+image+")");  
 				$("#main").css("background-position", "center center"); 
 				
 				

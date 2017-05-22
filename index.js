@@ -18,7 +18,9 @@ function onClosed() {
 function createMainWindow() {
 	const win = new electron.BrowserWindow({
 		width: 900,
-		height: 550
+		height: 550,
+		title: "Stratus",
+		icon: __dirname + '/icons/64x64.png'
 	});
 
 	win.loadURL(`file://${__dirname}/index.html`);

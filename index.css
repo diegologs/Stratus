@@ -57,7 +57,7 @@ h1{
 	margin-top: 15px;
 	margin-bottom: 15px;
 	border-left: 1px solid white;
-		border-right: 1px solid white;
+	border-right: 1px solid white;
 }
 
 .daily-temp{
@@ -66,6 +66,14 @@ h1{
 
 .icon{
 	padding-right: 20px;
+}
+
+.red{
+	color: #ff4759;
+}
+
+.blue{
+	color: #66e6ff;
 }
 
 ::-webkit-scrollbar { 
