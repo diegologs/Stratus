@@ -17,12 +17,13 @@ function onClosed() {
 
 function createMainWindow() {
 	const win = new electron.BrowserWindow({
-		width: 1280,
-		height: 720
+		width: 900,
+		height: 550
 	});
 
 	win.loadURL(`file://${__dirname}/index.html`);
 	win.on('closed', onClosed);
+	win.setMenu(null)
 
 	return win;
 }
@@ -36,6 +37,7 @@ app.on('window-all-closed', () => {
 app.on('activate', () => {
 	if (!mainWindow) {
 		mainWindow = createMainWindow();
+	
 	}
 });
 

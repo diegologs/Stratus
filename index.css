@@ -2,8 +2,15 @@ html,
 body {
 	padding: 0;
 	margin: 0;
+	overflow-x: hidden;
+	
 }
 
+.main{
+	min-height: 550px;
+	color: white;
+	 
+}
 body {
 	font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -24,4 +31,43 @@ header h1 {
 	font-weight: 100;
 	margin: 0;
 	padding: 0;
+}
+
+.content{
+	padding-top: 40px;
+}
+
+h1{
+	font-size: 4em;
+	font-weight: bold;
+}
+
+#list{
+	margin-top: 15px;
+}
+
+#list li{
+	margin-top: 15px;
+}
+
+.daily{
+	display: block;
+	margin: 0px auto;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-left: 1px solid white;
+		border-right: 1px solid white;
+}
+
+.daily-temp{
+	padding-left: 30px;
+}
+
+.icon{
+	padding-right: 20px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
