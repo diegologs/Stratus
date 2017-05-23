@@ -43,9 +43,13 @@
   },
   "build": {
     "appId": "frostqui.github.io.stratus"
+    
   
    
   },
+
+
+  
   "xo": {
     "esnext": true,
     "envs": [
