@@ -1,4 +1,4 @@
-# Stratus
+# Stratus :sunny:
 
 ![alt text](http://i.imgur.com/878JpGx.png)
 
